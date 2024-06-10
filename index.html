@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tic-Tac-Toe</h1>
+    </header>
+    <main>
+        <section id="player-info">
+            <div class="player">
+                <label for="player1">Player 1 (X):</label>
+                <input type="text" id="player1" placeholder="Enter name">
+            </div>
+            <div class="player">
+                <label for="player2">Player 2 (O):</label>
+                <input type="text" id="player2" placeholder="Enter name">
+            </div>
+        </section>
+        <div id="game-container">
+            <div id="game-board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+        </div>
+        <div id="status">Game in progress...</div>
+        <button id="restart-button">Restart Game</button>
+    </main>
+    <div id="popup">
+        <div id="popup-message"></div>
+        <button id="popup-button" onclick="document.getElementById('popup').style.display='none';">Close</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
